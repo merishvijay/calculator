@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./calc.js" defer ></script>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="calculatorBody">
+        <!-- <h1 style="text-align: center;">Calculator</h1> -->
+        <div id="display">
+            <input type="text" id="output"></input>
+        </div>
+        <div class="commands">
+            <button class="clear" id="clear" onclick="cleardisplay()">CLEAR</button>
+    
+            <button class="clear" id="delete" onclick="deletedisplay()">DELETE</button>
+        </div>
+
+
+            <div class="numberButtons">
+
+                <div class="row1">
+
+                    <button class="numbers" id="seven" onclick="displaydata(7)">7</button>
+                    <button class="numbers" id="eight" onclick="displaydata(8)">8</button>
+                    <button class="numbers" id="nine" onclick="displaydata(9)">9</button>
+                    <button class="operator" id="division" onclick="displaydata('/')">/</button>
+                    
+
+                </div>
+
+                <div class="row1">
+
+                    <button class="numbers" id="four" onclick="displaydata(4)">4</button>
+                    <button class="numbers" id="five" onclick="displaydata(5)">5</button>
+                    <button class="numbers" id="six" onclick="displaydata(6)">6</button>
+                    <button class="operator" id="mult" onclick="displaydata('*')">*</button>
+
+                </div>
+
+                <div class="row1">
+
+                    <button class="numbers" id="one" onclick="displaydata(1)">1</button>
+                    <button class="numbers" id="two" onclick="displaydata(2)">2</button>
+                    <button class="numbers" id="three" onclick="displaydata(3)">3</button>
+                    <button class="operator" id="sub" onclick="displaydata('-')">-</button>
+
+                </div>
+
+                <div class="row1">
+
+                    <button class="numbers" id="zero" onclick="displaydata(0)">0</button>
+                    <button class="numbers" id="decimal" onclick="displaydata('.')">.</button>
+                    <button class="numbers" id="equals" onclick="result()">=</button>
+                    <button class="operator" id="add" onclick="displaydata('+')">+</button>
+
+                </div> 
+
+           
+            </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
